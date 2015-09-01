@@ -1,0 +1,24 @@
+#contenedor
+{
+	margin:0 auto;
+	
+}
+#encabezado
+{
+	text-align: center;
+}
+#cuerpo
+{
+	text-align:center;
+	margin-left:100px;
+	
+}
+#cuadro
+{
+	border:1px solid black;
+	width:310px;
+	height:240px;
+	float: left;
+	margin-right:30px;
+	
+}

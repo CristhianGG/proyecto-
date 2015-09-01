@@ -1,0 +1,64 @@
+#contenedor
+{
+	width:1200px;
+	margin:0 auto;
+	border:1px solid black;
+	position: relative;
+	
+}
+
+#encabezado
+{
+	height:150px;
+	border:1px solid black;
+	background-color:black;
+	color:white;
+	font-family:helvetica;
+	font-size:13px;
+	
+}
+#msuper
+{
+	position: absolute;
+	top:15px;
+	left:400px;
+	width:600px;
+	height:50px;
+	
+	
+}
+#msuper a {
+	color:white;
+	text-decoration: none;
+}
+#msuper a:hover {
+	color:#1cf50a;
+}
+#msuper li {
+	float: left;
+	width:75px;
+	margin-right:15px;
+	
+}
+#cuerpo
+{
+	height:700px;
+	
+}
+#ifra
+{
+   width:100%;
+   height:100%;
+   	
+}
+#pie
+{
+	height:50px;
+	background-color:black;
+	color:white;
+	text-align:center;
+	font-family:helvetica;
+	font-size:12px;
+	padding-top:10px;
+	padding-bottom:5px;
+}
