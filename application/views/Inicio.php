@@ -13,6 +13,14 @@
             <div id="msuper">
 				<ul>
 					<li>
+						<a href="<?php echo site_url ('index.php/Comida/Novedades')?> " target="marco"> 
+						<img src="<?php echo base_url ('img/home.png')?>" width="30px" height="30px"/> 
+						</a>
+											
+					
+						</li>
+					<li>
+					
 						<a href="<?php echo site_url('index.php/Comida/Menu')?>" target="marco"> Menu</a>
 					</li>
 					<li>
@@ -22,6 +30,7 @@
 						<a href="<?php echo site_url('index.php/Comida/Delivery') ?>"target="marco"> Delivery</a>
 					</li>
 				</ul>
+				
 			</div>
 		</div>
 		
