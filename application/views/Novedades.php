@@ -26,7 +26,7 @@
 		 <div id="cuerpo">
             <div id="Cuadro">
 			
-			 <h3> Menu del Dia	 </h3>
+			 <h3> Tu pedido </h3>
 			 <img src="<?php echo base_url ('img/hamburger.jpg')?>" width="300px" height="150px" />
 			</div>
 			 </div>
@@ -35,7 +35,7 @@
 		 <div id="cuerpo">
             <div id="Cuadro">
 			
-			 <h3> Menu del Dia </h3>
+			 <h3> Contactanos </h3>
 			 <img src="<?php echo base_url ('img/hamburger.jpg')?>" width="300px" height="150px" />
 			</div>
 			 </div>

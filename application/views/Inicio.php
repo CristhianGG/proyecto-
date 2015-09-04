@@ -27,8 +27,13 @@
 						<a href="<?php echo site_url('index.php/Comida/Ubicacion')?>" target="marco"> Ubicacion</a>
 					</li>
 					<li>
-						<a href="<?php echo site_url('index.php/Comida/Delivery') ?>"target="marco"> Delivery</a>
+						<a href="<?php echo site_url('index.php/Comida/Contacto') ?>"target="marco"> Contacto</a>
 					</li>
+					<li>
+						<a href="<?php echo site_url('index.php/Comida/Orden_online') ?>"target="marco"> Orden online</a>
+					</li>
+					
+
 				</ul>
 				
 			</div>

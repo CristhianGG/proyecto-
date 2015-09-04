@@ -19,9 +19,9 @@ public function Menu()
 		$this->load->view('Menu');
 	}
 		
-public function Delivery()
+public function Contacto()
 	{
-		$this->load->view('Delivery');
+		$this->load->view('Contacto');
 	}
 
 public function Ubicacion()
@@ -74,17 +74,76 @@ public function registro ()
 			 'Facebook'=>$this->input->post('Facebook'),
 			 
 			 				);
+				$datos2= array (
+			 'Usuario'=>$this->input->post('Usuario'),
+			 'Clave'=>$this->input->post('Clave'),
+			
+			 
+			 				);
 					// registro al usuario
 					
-					$this->comida_modelo->registrar($datos);
+					$this->comida_modelo->registrar($datos,$datos2);
 					
 						$this->load->view('informes');
-						
+			 
+			 
+			 				
 						
 		     }
 	
 	}
-
-}
+ public function orden_online ()
+ {
+ 	// Recibo pedidos 
+	if ($_POST)
+	{
+	 	// MEDIANTE EL ID DÈL PRODUCTO TRAIGO SU PRECIO 
+		
+		$resultado=$this->comida_modelo->traer_precio($this->input->post('Producto'));
+		$precio=$resultado->row ()->Precio;
+		$datos= array (
+			 'Producto'=>$this->input->post('Producto'),
+			 'Cantidad'=>1,
+			 'Idcliente'=>$this->session->userdata['IdCliente'],
+			 // Queda hacer calculo del  precio 
+			  'Precio'=>$precio,
+			 
+			 				);
+				$this->comida_modelo->insert_compra($datos);
+				redirect("index.php/Comida/orden_online");
+	}
+	
+	
+	 
+	
+	else 
+	{
+		
+	
+	   // Verifico si el usuario esta logeado 
+	   			if ($this->session->userdata['IdCliente'])
+	  		    {
+					// Todo venta
+				 $datos= array (
+			 'Productos'=>$this->comida_modelo->Traer_Productos(),
+			
+			 
+			 				);
+				 $this->load->view('Orden_Compra',$datos);
+			 
+			
+			
+				
+	   		    }
+	  			 else
+				{
+								
+						
+							$this->load->view('Aviso Login');
+							
+				}
+	}  
+ }
+}//fin clase 
 
 

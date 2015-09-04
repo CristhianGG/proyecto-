@@ -16,8 +16,8 @@
 			 <hr 
 			 />
 			 <ul>
-			 <li>  Telefono : 38042345    </li>
-			 <li > Direccion : Barrio los caudillos </li>
+			 <li>   Telefono : 38042345    </li>
+			 <li >  Direccion : Barrio los caudillos </li>
 			 <li >  Facebook : Comidas 	Aplebes' </li>
 			 	
 			 </ul>
@@ -27,15 +27,16 @@
             <div id="der">
 			  
 			   <img src=<?php echo base_url ('img/casacomida.jpg')?> ">
+			   <br
+			   
+			   <img	src="<?php echo bas_url ('img/Localidad')?> ">
+			  
+			  <</img>
+			  
 			   
 			
 			</div>
       
- 
- 
- 
- 
- 
       
    </div>
         
